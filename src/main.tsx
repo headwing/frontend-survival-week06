@@ -1,24 +1,17 @@
 import 'reflect-metadata';
 
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import App from './App';
 
 function main() {
-  const element = document.getElementById('root');
-
-  if (!element) {
+  const container = document.getElementById('root');
+  if (!container) {
     return;
   }
 
-  const root = ReactDOM.createRoot(element);
-
-  root.render((
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  ));
+  const root = ReactDOM.createRoot(container);
+  root.render(<App />);
 }
 
 main();
