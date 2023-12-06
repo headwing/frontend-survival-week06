@@ -11,6 +11,7 @@ export default function Categories({
   const handleSetFilterCategory = (category: string) => {
     setFilterCategory(category);
   };
+
   return (
     <ul style={{ display: 'flex', padding: 0, listStyle: 'none' }}>
       {['전체', ...categories].map((category: string) => (

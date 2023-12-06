@@ -10,6 +10,7 @@ export default function CartItem({
   food, index, onClickCancel,
 }: CartItemProps) {
   const { name, price } = food;
+
   return (
     <div>
       <span>{name}</span>
